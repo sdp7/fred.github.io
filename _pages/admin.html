@@ -1,0 +1,88 @@
+---
+layout: default_layout
+title: "FRED - Admin"
+permalink: /admin
+---
+
+<nav class="navbar py-1 navbar-expand-md navbar-dark sticky-top" style="background-color: #943404; top: 65px;">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupported" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupported">
+			<span class="navbar-text mr-auto">
+				Welcome, User!
+			</span>
+		    <ul class="navbar-nav ml-auto">
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#dashboard">Dashboard</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#m_and_p">Maintenance & Diagnostics</a> </li>
+				{% include live_status_link.html %}
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="dashboard" style="scroll-margin-top:110px;">
+	<h2 style="padding-top: 30px; padding-left: 10px; padding-bottom: 10px;">Dashboard</h2>
+
+	<div class="card-columns" style="padding: 20px">
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Model: FRED - Prototype</p>
+	    </div>
+	  </div>
+	  {% include fred_status.html %}
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Version: 3.0</p>
+	    </div>
+	  </div>
+	  {% include fire_panel_status.html %}
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Location: The Arena</p>
+	    </div>
+	  </div>
+	  {% include app_link_status.html %}
+	</div>
+
+	<div class="card" style="margin-left: 20px; margin-right: 20px;">
+  		<div class="card-header">Video Log</div>
+		<div class="card-body">
+		    <p class="card-title">Gain access to high-quality video logs of F.R.E.D in .avi format.</p>
+		    <a href="http://localhost:80" target="_blank" class="btn btn-primary">Go to Web Server</a>
+		</div>
+	</div>
+</div>
+
+<div id="m_and_p" style="scroll-margin-top:110px;">
+	<h2 style="padding-top: 30px; padding-left: 10px; padding-bottom: 10px;">Maintenance & Parts</h2>
+
+	<center>
+	<div class="btn-group" role="group" aria-label="Basic example">
+		<button type="button" class="btn btn-dark">Update Firmware</button>
+  		<button type="button" class="btn btn-dark">Perform Maintenance Check</button>
+  		<button type="button" class="btn btn-info">Last Maintenance Check : 19/03/2022 20:23</button>
+  		<button type="button" class="btn btn-dark">Network Breakdown</button>
+  		<button type="button" class="btn btn-dark">Request Assistance</button>
+	</div>
+	</center>
+
+
+	<div class="card-columns" style="padding: 20px">
+	  <div class="card bg-success text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Robots Live: 1</p>
+	    </div>
+	  </div>
+	  <div class="card bg-danger"></div>
+	  {% include sys_network.html %}
+	  <div class="card bg-danger"></div>
+	  {% include warnings.html %}
+	  <div class="card bg-danger"></div>
+</div>
+
+{% include live_status.html %}
+
+<br><br><br>

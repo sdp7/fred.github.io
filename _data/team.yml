@@ -1,0 +1,35 @@
+- name: Austin Pan
+  position: Mentor
+  image: austin.jpg
+
+- name: Arka Purkayastha
+  position: Wheelbase
+  image: arka.jpg
+
+- name: Jingyuan Wang
+  position: Wheelbase
+  image: andy.jpg
+
+- name: Emmy Zhou
+  position: Turret
+  image: emmy.jpg
+
+- name: Xi Zhang
+  position: App / Turret
+  image: xi.jpg
+
+- name: Hefan Wang
+  position: Simulation / Turret
+  image: hefan.jpg
+
+- name: Ross Brown
+  position: Vision
+  image: ross.jpg
+
+- name: Jhanvi Jaiman
+  position: Vision
+  image: jhanvi.jpg
+
+- name: Neeraj Chekutty
+  position: Vision
+  image: neeraj.jpg

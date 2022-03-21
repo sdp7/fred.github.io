@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Meta Characteristic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Humanoid Robots, HumanEd, Society, Robotics, University of Edinburgh, UOE, UofE, Tech, STEM">
+    <meta name="description" content="The Humanoid Robotics Society is an interdisciplinary group of students focused on the long-term research, development and implementation of new technologies in the field of limbs, exoskeletons, humanoid robots and bipedal movement."
+    >
+    <meta name="author" content="HumanEd">
+
+    <!-- Config CSS -->
+    <link href="site_assets/css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="site_assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/gif/png" href="site_assets/images/main-logos/fred.png">
+<title>FRED - Admin</title>
+
+  </head>
+
+  <body>
+
+  	<nav class="navbar py-1 navbar-expand-md navbar-dark sticky-top" style="background-color: #000000;">
+	<div class="container-fluid">
+		<a class="navbar-brand zoom" href="/"><img src="site_assets/images/main-logos/fred.png" alt="" width="140" height="50"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto mb-1 mb-lg-0">
+		      	<li class="nav-item center"> <a class="nav-link" id="transition" href="/team">team</a> </li>
+		      	<li class="nav-item center"> <a class="nav-link" id="transition" href="/admin">admin</a> </li>
+		        <li class="nav-item center"> <a class="nav-link" id="transition" href="#contact-us">contact us</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+    
+  	<main> <nav class="navbar py-1 navbar-expand-md navbar-dark sticky-top" style="background-color: #943404; top: 65px;">
+	<div class="container-fluid">
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupported" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupported">
+			<span class="navbar-text mr-auto">
+				Welcome, User!
+			</span>
+		    <ul class="navbar-nav ml-auto">
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#dashboard">Dashboard</a> </li>
+				<li class="nav-item center"> <a class="nav-link" id="team-transition" href="#m_and_p">Maintenance & Diagnostics</a> </li>
+				<li class="nav-item center" hidden="hidden" id="live_status_link"> <a class="nav-link" href="#m_and_p" id="team-transition">F.R.E.D Status - LIVE</a> </li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div id="dashboard" style="scroll-margin-top:110px;">
+	<h2 style="padding-top: 30px; padding-left: 10px; padding-bottom: 10px;">Dashboard</h2>
+
+	<div class="card-columns" style="padding: 20px">
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Model: FRED - Prototype</p>
+	    </div>
+	  </div>
+	  <div class="card bg-success" id="fs">
+<div class="card-body text-center text-white">
+<p class="card-text" id="fred_status">F.R.E.D: ACTIVE</p>
+</div>
+</div>
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Version: 3.0</p>
+	    </div>
+	  </div>
+	  <div class="card bg-danger" id="fps">
+<div class="card-body text-center text-white">
+<p class="card-text" id="fire_panel_status">Fire Panel: INACTIVE</p>
+</div>
+</div>
+	  <div class="card bg-dark text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Location: The Arena</p>
+	    </div>
+	  </div>
+	  <div class="card bg-success" id="als">
+<div class="card-body text-center text-white">
+<p class="card-text" id="app_link_status">App Link: ACTIVE</p>
+</div>
+</div>
+	</div>
+
+	<div class="card" style="margin-left: 20px; margin-right: 20px;">
+  		<div class="card-header">Video Log</div>
+		<div class="card-body">
+		    <p class="card-title">Gain access to high-quality video logs of F.R.E.D in .avi format.</p>
+		    <a href="http://localhost:80" target="_blank" class="btn btn-primary">Go to Web Server</a>
+		</div>
+	</div>
+</div>
+
+<div id="m_and_p" style="scroll-margin-top:110px;">
+	<h2 style="padding-top: 30px; padding-left: 10px; padding-bottom: 10px;">Maintenance & Parts</h2>
+
+	<center>
+	<div class="btn-group" role="group" aria-label="Basic example">
+		<button type="button" class="btn btn-dark">Update Firmware</button>
+  		<button type="button" class="btn btn-dark">Perform Maintenance Check</button>
+  		<button type="button" class="btn btn-info">Last Maintenance Check : 19/03/2022 20:23</button>
+  		<button type="button" class="btn btn-dark">Network Breakdown</button>
+  		<button type="button" class="btn btn-dark">Request Assistance</button>
+	</div>
+	</center>
+
+
+	<div class="card-columns" style="padding: 20px">
+	  <div class="card bg-success text-white">
+	    <div class="card-body text-center">
+	      <p class="card-text">Robots Live: 1</p>
+	    </div>
+	  </div>
+	  <div class="card bg-danger"></div>
+	  <div class="card bg-danger" id="sys_network_card">
+<div class="card-body text-center text-white">
+<p class="card-text" id="sys_network">System Network: ERROR</p>
+</div>
+</div>
+	  <div class="card bg-danger"></div>
+	  <div class="card bg-danger" id="warnings_card">
+<div class="card-body text-center text-white">
+<p class="card-text" id="warnings">Warnings: 1</p>
+</div>
+</div>
+	  <div class="card bg-danger"></div>
+</div>
+
+<div hidden="hidden" id="live_status" style="scroll-margin-top:110px;">
+<h2 style="padding-top: 30px; padding-left: 10px; padding-bottom: 20px;">Live Status</h2>
+<div class="card-columns" style="padding: 20px">
+<div class="card bg-info text-white">
+<div class="card-body text-center">
+<p class="card-text" id="fire_location">Fire Identified: Zone 1</p>
+</div>
+</div>
+<div class="card bg-danger"></div>
+<div class="card bg-warning text-white">
+<div class="card-body text-center">
+<p class="card-text" id="fred_activity">F.R.E.D Zone 1 : EXPLORING...</p>
+</div>
+</div>
+<div class="card bg-danger"></div>
+<div class="card bg-info text-white">
+<div class="card-body text-center">
+<p class="card-text" id="communication_activity">Humans Detected: 0</p>
+</div>
+</div>
+<div class="card bg-danger"></div>
+</div>
+<div class="card" style="margin-left: 20px; margin-right: 20px;">
+<div class="card-header">Video Stream from F.R.E.D</div>
+<div class="card-body">
+<p class="card-title">High-quality real time footage from F.R.E.D</p>
+<a class="btn btn-primary" href="http://aggron:8080/?action=stream" target="_blank">Open Live</a>
+</div>
+</div>
+<div class="card-columns" style="padding: 20px">
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">System Network: OK</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Circuit Board: OK</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Battery: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Distance Sensor: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">LIDAR: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Camera: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Extinguisher Pump: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Wheelbase: ACTIVE</p>
+</div>
+</div>
+<div class="card bg-success text-white">
+<div class="card-body text-center">
+<p class="card-text">Arm: ACTIVE</p>
+</div>
+</div>
+</div>
+</div>
+
+<br><br><br>
+ </main>
+
+    <!-- Bootstrap JS -->
+    <script src="site_assets/js/live.js"></script>
+    
+
+    <div id="contact-us">
+	<footer class="footer" style="background-color: #000000;">
+	    <div class="container-fluid py-4">
+	    	<a class="footer-img zoom" href="/"><img src="site_assets/images/main-logos/fred.png" alt="" height="80"></a>
+	    	<a class=" footer-img zoom" href="https://www.ed.ac.uk/"><img class="edi-logo" src="site_assets/images/main-logos/uoe.png" alt="" width="80"></a>
+	    	<br><br>
+	    	<h5>FRED - Fire Resistant Extinguishing Device</h5>
+	    	
+	    	<p>A fire extinguishing system with autonomous and remote controlled features designed to<br>
+	    	integrate with the existing fire safety system in the building, with an accompanying<br>
+	    	adminstration dashboard and app ecosystem that provides analysis.</p>
+
+	    	<p>SDP 7, Locker 307, Floor 3 - Appleton Tower, 11 Crichton St, Newington, Edinburgh EH8 9LE</p>
+
+	    	<p>SVG Background provided by <span class="attr"><a target="_blank" href="https://heropatterns.com/">Hero Patterns</a></span></p>
+	    </div>
+	</footer>
+</div>
+
+  </body>
+</html>

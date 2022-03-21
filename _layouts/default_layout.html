@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Meta Characteristic -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Humanoid Robots, HumanEd, Society, Robotics, University of Edinburgh, UOE, UofE, Tech, STEM">
+    <meta name="description" content="The Humanoid Robotics Society is an interdisciplinary group of students focused on the long-term research, development and implementation of new technologies in the field of limbs, exoskeletons, humanoid robots and bipedal movement."
+    >
+    <meta name="author" content="HumanEd">
+
+    <!-- Config CSS -->
+    <link href="site_assets/css/style.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="site_assets/css/bootstrap.min.css" rel="stylesheet">
+
+    {% include header.html %}
+
+  </head>
+
+  <body>
+
+  	{% include navigation.html %}
+    
+  	<main> {{ content }} </main>
+
+    <!-- Bootstrap JS -->
+    <script src="site_assets/js/live.js"></script>
+    
+
+    {% include footer.html %}
+
+  </body>
+</html>
